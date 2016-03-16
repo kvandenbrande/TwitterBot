@@ -1,0 +1,33 @@
+# Initalizing authentication
+	Twitter.TwitterAPI
+
+# Logging
+	try:
+        self.api.update_status(status=foo)
+    except tweepy.error.TweepError as e:
+    	self.log(e.message)
+    else:
+        self.log("Example: " + foo)
+
+# Tweeting
+	Twitter.tweet("file.txt")
+
+# Group Tweeting
+	Twitter.groupTweet("Handlers.txt", "BulkTweet.txt")
+
+# Picture Tweet
+	Twitter.picTweet("imagePath.jpg", "Status Text")
+
+# Follow Users
+	Twitter.followUser("user")
+
+# Unfollow Users
+	Twitter.unfollowUser("user")
+
+# AutoFollow Users
+	Twitter.autoFollow()
+
+# AutoUnfollow Users
+	Twitter.autoUnfollow()
+
+#
